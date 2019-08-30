@@ -7,5 +7,16 @@ import "../assets/img/4geeks.ico";
 import "../style/index.scss";
 
 window.onload = function() {
-  console.log("Hello Rigo from the console!");
+  var pronoun = ["the", "our", "your"];
+  var adj = ["great", "big", "amazing"];
+  var noun = ["jogger", "racoon", "bloop"];
+
+  for (var i = 0; i < pronoun.length; i++) {
+    for (var j = 0; j < adj.length; j++) {
+      for (var k = 0; k < noun.length; k++) {
+        document.querySelector("#domain_name").innerHTML +=
+          "<li> www." + pronoun[i] + adj[j] + noun[k] + ".com </li>";
+      }
+    }
+  }
 };
